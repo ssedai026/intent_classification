@@ -1,4 +1,4 @@
-## Description
+## Intent classification and out-of-scope detection using Bayesian deep learning
 * This code performs intent classification (over 150 intent classes) and
   out of scope (OOS) query detection on the imbalanced data set
   https://github.com/clinc/oos-eval/blob/master/data/data_imbalanced.json
@@ -19,11 +19,7 @@
 
 
 ## Running the code 
-* Install all the packages listed in requirements.txt. 
-* Download the data files from https://github.com/clinc/oos-eval in same
-  location as the notebook files. The file
-  oos-eval/data/data\_imbalanced.json should be present relative to the
-  location of notebook files.
+* Install all the packages listed in requirements.txt
 
 * Then run the code in following order:
 
@@ -36,5 +32,9 @@ code requires pytorch.
   
     * eval.ipynb: loads the model perform prediction/evaluation.This code
  requires tensorflow.
+
+## Results on the test set
+* Inscope classification accuracy = 0.92
+* Out of scope detection recall= 0.65, precision = 0.74
     
 
